@@ -1,6 +1,6 @@
 {
   "name": "goby",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Username generator. What do you want to go by?",
   "main": "lib/goby.js",
   "repository": {
