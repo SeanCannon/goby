@@ -16,7 +16,7 @@ $ npm test
 ## Run example script
 I included a sample file with some various use cases, decorators, list-overrides, etc.
 ```
-$ node ./path/to/goby/example.js
+$ npm run demo
 ```
 ## Important methods
 There are really only two exposed methods to worry about, `init()` and `generate()`
