@@ -10,7 +10,7 @@ var sampleLists = {
 
 var sampleDecorators = {
   noDecoration : function(pieces) { return pieces; },
-  caps         : function(pieces) { return pieces.join(' ').toUpperCase().replace('--', '-').replace(' -', '-').replace('- ', '-'); },
+  caps         : function(pieces) { return pieces.join(' ').toUpperCase(); },
   camelCase    : function(pieces) {
                    return pieces.join(' ').replace(/(?:^\w|[A-Z]|\b\w|\s+)/g, function(match, index) {
                      if (+match === 0) return '';

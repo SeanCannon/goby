@@ -24,11 +24,15 @@ There are really only two exposed methods to worry about, `init()` and `generate
 ### goby.init()
 When you require goby, you will need to invoke `init()` and optionally pass in an `options` object, 
 which will contain any or all of these overrides: 
-  - `adjectives` {Array} A list of adjectives or surnames
-  - `prefixes`   {Array} A list of prefix words or first names
-  - `suffixes`   {Array} A list of suffixes or family names
-  - `decorator`  {Function} When the name is generated, an array of the name pieces will be passed to a decorator, either internally or to one you provide here.
-  
+
+| Option       | Type     | Default        | Description |
+| ------------ | -------- | -------------- | ----------- |
+| *adjectives* | Array    | [Included](https://github.com/SeanCannon/goby/tree/master/lib/lists/included)     | A list of adjectives or surnames. |
+| *prefixes*   | Array    | [Included](https://github.com/SeanCannon/goby/tree/master/lib/lists/included)     | A list of prefix words or first names. |
+| *suffixes*   | Array    | [Included](https://github.com/SeanCannon/goby/tree/master/lib/lists/included)     | A list of suffixes or family names. |
+| *decorator*  | Function | [R.join(SPACE)](http://ramdajs.com/0.17/docs/#join) | When the name is generated, an array of the name pieces will be passed to a decorator, either internally or to one you provide here. |
+| *autoStitch* | Boolean  | *true*         | If the decorator returns a string, `autoStitch` will join prefix/suffixes which contain a hyphen and consolidate multiple hyphens. Example `hydro- man` becomes `hydro-man` and `hydro- -ionic` becomes `hydro-ionic`. |
+
 The `init()` method returns an object with a `generate()` method.
 
 ### goby.init().generate()
