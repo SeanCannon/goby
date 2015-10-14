@@ -1,6 +1,6 @@
 {
   "name": "goby",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Username generator. What do you want to go by?",
   "main": "lib/goby.js",
   "repository": {
@@ -8,7 +8,7 @@
     "url": "git+https://github.com/seancannon/goby.git"
   },
   "dependencies": {
-    "ramda": "^0.17.x"
+    "ramda": "^0.18.x"
   },
   "devDependencies": {
     "coveralls": "^2.11.2",
